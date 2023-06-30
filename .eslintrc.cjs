@@ -8,6 +8,10 @@ const config = {
       extends: [
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
       ],
+      rules: {
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+      },
       files: ["*.ts", "*.tsx"],
       parserOptions: {
         project: path.join(__dirname, "tsconfig.json"),
